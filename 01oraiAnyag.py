@@ -11,3 +11,20 @@ jelenik meg""")
 #\n
 
 
+# értéktípusok:
+15          #int
+"szöveg"    #str (string)
+3.5         #float  (lebegő pontos)
+3,5         #értékpár
+
+
+# változók létrehozása és értékadás
+print()
+a = 'válozóba tárolt string'
+print(a)
+
+ x  15
+ y  3.5
+ z
+
+ print(a,x,y,z)
