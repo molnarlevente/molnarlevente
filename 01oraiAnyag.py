@@ -77,4 +77,34 @@ float(25)
 str(25)
 '25'
 
+o=c/3             #maradékos osztás
+
+print()
+print(o)
+o=c//3
+
+h=c**2             #hatványozás
+print(o)
+
+o=c%d
+print(o)           #osztás maradéka
+
+# a zárójelekkel módosítható ez eredmény kiértékelése!!!!
+# n=5
+# n= 3*n+1 eredmény 16
+# de ha zárójelezek:
+# n=5
+# n= 3*(n+1) eredmény 18
+
+#szövegösszefűzés:
+vnev = 'Molnár'
+knev = 'Levi'
+print(vnev + ' ' + knev)
+
+#adat bekérés a felhasználótól
+input('Kérek egy adatot: ')
+
+#adat bekérés a felhasználótól és változóba tárolása
+valasz=input('Kérek egy adatot: ')
+print(f'A megoldot adat: {valasz}')
 
