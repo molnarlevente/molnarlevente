@@ -1,5 +1,5 @@
 # kiiratás:
-print("Ez az első programom") # vagyv
+print("Ez az első programom")       # vagyv
 print()
 print('Ez is szöveg')
 
@@ -41,7 +41,7 @@ print(b)
 
 #változó tíusának a megváltoztatása
 print()       #sortörés
-ido = 'süt a nap' #str
+ido = ' süt a nap' #str
 print(ido)
 ido= 'felhős'  #érték megváltoztatása
 print(ido)
@@ -57,8 +57,8 @@ print()
 d=10
 c=5
 e=c+d
-print(e)       #változóba eltárolva
-print(c+d)     #kiiratás közben
+print(e)                                   #változóba eltárolva
+print(c+d)                                 #kiiratás közben
 
 #szöveg hozzáadása a kiíratáshoz
 print('\nA két szám összege: '+str(e))     #típuskonverzió str(e) (kasztolás)
@@ -77,17 +77,16 @@ float(25)
 str(25)
 '25'
 
-o=c/3             #maradékos osztás
+o=c/3                   #maradékos osztás
 
-print()
 print(o)
 o=c//3
 
-h=c**2             #hatványozás
+h=c**2                  #hatványozás
 print(o)
 
 o=c%d
-print(o)           #osztás maradéka
+print(o)                #osztás maradéka
 
 # a zárójelekkel módosítható ez eredmény kiértékelése!!!!
 # n=5
