@@ -1,0 +1,71 @@
+a = ("Ákos", "Bence", "Marci", "Karcsi", "Kevin", "Feri", "Zsuzsi", "Vikrot", "Merkel", "Gergő")
+
+
+for i in ["Ákos", "Bence", "Marci", "Karcsi", "Kevin", "Feri", "Zsuzsi", "Vikrot", "Merkel", "Gergő"]:
+    print("Szia "+ i +", sok szeretettel várlak a házibulimban")
+
+print()# sortör
+
+print(len(a))
+
+print()# sortör
+
+for f in range(1, 11, 2):
+    print(f, end=' ,')
+
+print()# sortör
+
+for f in range(2, 11, 2):
+    print(f, end=' ,')
+
+print()# sortör
+
+for f in range(1, 101, 2):
+    print(f, end=' ,')
+
+print()# sortör
+
+for f in range(2, 101, 2):
+    print(f, end=' ,')
+
+print()# sortör
+
+for g in ["Ákos", "Bence", "Marci", "Karcsi", "Kevin", "Feri", "Zsuzsi", "Vikrot", "Merkel", "Gergő"]:
+    print("Szia " + g + ", hogy vagy?")
+
+
+print()# sortör
+
+ú = 2
+ó = 10
+
+print(ú * ó)        #20
+print(ú ** ó)       #20
+print(ó / ú)        #5.0
+print(ó // ú)       #5
+print(ú % ó)        #2
+print(ó + ú)        #12
+print(ú - ó)        #-8
+
+print()# sortör
+
+l = ("Levi")
+o = ("Zsuzsi")
+
+print(len(l))
+print(len(o))
+
+print(len(l)==len(o))
+
+print()# sortör
+
+for g in range(1, 11, 2):
+    print(g, end=' ,')
+
+print()# sortör
+
+for g in range(2, 11, 2):
+    print(g, end=' ,')
+
+print()# sortör
+
