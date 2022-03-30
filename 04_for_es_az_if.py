@@ -7,9 +7,9 @@ list = [5, 47, 8, 54, 6, 2, 15, 4, 1, 25, 10, 65, 17, 321]
 # print()
 #
 # # irjuk ki a 20 és a 10 közötti számot
-# for i in list:
-#     if i >10 and i <20:
-#         print(i, end=',')
+for i in list:
+    if i >10 and i <20:
+        print(i, end=',')
 #
 # # irjuk ki a 10-nél kissebb és a 20-nál nagyobb számokat
 # print()
@@ -19,12 +19,12 @@ list = [5, 47, 8, 54, 6, 2, 15, 4, 1, 25, 10, 65, 17, 321]
 #         print(f, end="," )
 #
 #irjuk ki a lista elemeit ameddig nem találok 10-et
-print()
-
-for g in list:
-    print(g, end=',')u
-    if g == 10:
-        break
+# print()
+#
+# for g in list:
+#     print(g, end=',')u
+#     if g == 10:
+#         break
 
 #                                   HÁZI FELADAT:
 

@@ -88,9 +88,9 @@ for i in gyumolcsok2:
 
 print()                     # megfordítjuk
 
-for i in tulajdonsag:
-    for j in gyumolcsok2:
-        print(i, j)
+# for i in tulajdonsag:
+#     for j in gyumolcsok2:
+#         print(i, j)
 
 
 
