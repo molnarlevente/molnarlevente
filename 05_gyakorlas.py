@@ -1,63 +1,73 @@
 
-print("8. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
-      "a pozitív hárommal osztható számokat, amelyek kisebbek az adott számnál!")
+# print("8. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
+#       "a pozitív hárommal osztható számokat, amelyek kisebbek az adott számnál!")
+kerdes =int(input("Kérek egy pozitív egész számot : "))
+
+for kerdes in range(1, kerdes):
+      if kerdes % 3 == 0:
+            print(kerdes, end=' ')
+                                                #Kész
 print()
 
-egy=int(input("Kérek egy pozitív egész számot: "))
-while egy%3:
-      print(f"igen")
-      break
-print(f"Következő")
+# while egy > 100:
+#       if egy % 3 ==0:
+#             print(egy)
+#       egy +=1
 
 
-# def osszeg_eddig (egy):
-#     alap = 0
-#     e = 1
-#     while e <= egy:
-#         alap = alap + e
-#         e = e%3
-#     return alap
-# print(f"")
+
+# print(egy<szam and egy%3)
 
 
 print("9. Írj egy Python programot, amely bekér két pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
       "a páros számokat, amelyek a két adott érték közötti zárt intervallumban találhatóak!")
 
 print()
+# x=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+valasz1=int(input("Kérek egy pozitív egész számot: "))
+valasz2=int(input("Kérek még egy pozitív egész számot: "))               #kész
 
-# elso=int(input("Kérek egy pozitív egész számot: "))
-# masodik=int(input("Kérek még egy pozitív egész számot: "))
-# lista1=int(0,1,2,3,4,5,6,7,8,9,10)
-#
-# while True:
-#       if elso<lista1<masodik:
-#             print(lista1)
-#       else:
-#             if elso > lista1 > masodik:
-#                   print(lista1)
+for i in range(valasz1, valasz2):
+      print(i, end=' ')
+
+
+# osszeg9 = 0
+# for i in x:
+#     osszeg9=valasz1<x>valasz2
+# print(f"2.: {osszeg9}" )
+
+# if valasz1 < valasz2 and valasz1 < valasz2:
+#     print(f"a/az {n} a legkisebb!")
+# else:
+#     if valasz2 < valasz1 and valasz2 < valasz1:
+#         print(f" a/az {m} a legkisebb!")
+#     else:
+#         print(f" a/az {v} a legkisebb!")
+# if valasz1<x and valasz2<x:                                           #Félig kész
+# print(f"Az adott szémok, amelyek a/az {valasz1} és a/az {valasz2} nem más mint a  ")
 
 
 print("10. Írj egy Python programot, amely bekér egy 20-nál nem nagyobb pozitív egész számot a felhasználótól és kiírja "
       "a képernyőre a START szót úgy, hogy előtte annyi szóköz legyen amennyi a megadott szám értéke!")
+
+valasz3 = int(input("Kérek egy 20-nál nem nagyobb pozitív egész számot: "))
+kerek = valasz3 * " "                                                       #KÉSZ
+print(f"{kerek} START")
+
+
+
+#print("11. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azt a számot, "
+     # "amely az ennél a számnál nem nagyobb pozitív egész számok összege!")
+
+# lista11=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+valasz11=int(input("Kérek egy pozitív egész számot: "))
+for i in range(0, valasz11):                          #
+      print(i, end=' ')
+
 print()
-lista = int(input("Kérek egy 20-nál nem nagyobb pozitív egész számot: "))
-a= len(lista)
-
-# szamlalo=int(input("Kérek egy 20-nál nem nagyobb pozitív egész számot: "))
-# def szamjegy_szam (n):
-#       szamlalo = 0
-#       while n != 0:
-#             szamlalo = szamlalo
-#           n = n
 
 
-print("11. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azt a számot, "
-      "amely az ennél a számnál nem nagyobb pozitív egész számok összege!")
-# lista=[1,2,3,4,5,6,7,8,9,10]
-# szam= int(input("Kérek egy pozitív egész számot 1 - 10 között: "))
-# for i in szam:
-#     if szam == lista:
-#         print()
 
 
 print("12. Írj egy Python programot, amely bekér egy szót (sztringet) a felhasználótól és kiírja a képernyőre "
@@ -65,28 +75,30 @@ print("12. Írj egy Python programot, amely bekér egy szót (sztringet) a felha
 
 valasz12=input("Kérek egy szót: ")
 for i in valasz12:
-      print(i)
+      print(i)                                        #kész
 
 print("Kész")
 
 print("13. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre "
       "felváltva a 0 és 1 számjegyeket úgy, hogy a számjegyek együttes darabszáma pontosan a megadott szám legyen!")
-lista = [0,1]
-valasz13=int(input("Kérek egy szót: "))
+
+valasz13=int(input("Kérek egy számot: "))
+kerek13= valasz13 * (1,2)                                   # kész
+print(kerek13)
+
+print("14. Írj egy Python programot, amely először bekér egy kisebb majd egy nagyobb pozitív valós számot a felhasználótól")
+      # " és kiírja a képernyőre azokat az egész számokat, amelyek a megadott értékek között helyezkednek el!")
+valasz14a=int(input("Kérek egy kisebb számot: "))
+valasz14b=int(input("Kérek egy nagyobb számot: "))
+
+for i in range(valasz14a, valasz14b):
+      print(i, end=' ')
+                                          #kész
+print()
 
 
 
-print("14. Írj egy Python programot, amely először bekér egy kisebb majd egy nagyobb pozitív valós számot a felhasználótól"
-      " és kiírja a képernyőre azokat az egész számokat, amelyek a megadott értékek között helyezkednek el!")
-a=int(input("Kérek egy számot: "))
-b=int(input("Kérek egy nagyobb számot: "))
-c= a + b
+  #print("15. Írj egy Python eljárást, amely paraméterként kap 2 egész számot (N és M) és kiír a képernyőre a csillag (*) karaktereket"
+      #" M darab sorban és N darab oszlopban (tehát NxM darab karaktert egy téglalap alakú képernyőrészre)! A programodban hívd is meg ezt az alprogramot!")
 
-for i in lista:
-      print(i, end=', ')
-
-
-print("15. Írj egy Python eljárást, amely paraméterként kap 2 egész számot (N és M) és kiír a képernyőre a csillag (*) karaktereket"
-      " M darab sorban és N darab oszlopban (tehát NxM darab karaktert egy téglalap alakú képernyőrészre)! A programodban hívd is meg ezt az alprogramot!")
-
-
+#egybeágyazott for ciklus
