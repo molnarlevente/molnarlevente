@@ -85,6 +85,64 @@ else:
             #break      # ha csak az első találatot akarjuk kiírni
         index+=1
 
+#       while
+
+
+
+# while True:
+#     betu2 = input("Kérek egy betut: ")
+#     if betu2 == '':
+#         break
+#     index += int(index)
+# print(f"itt az eredmény: {betu2}!")
+
+
+
+
+
+
+
+
+
+##### beépített metódus haszn.
+print(gyumolcs.find('k'))       #ha nemez akarunk akkir if -1bol nem!!! MERT-1-el tér vissza!!!! !      !      !      !      !
+print(gyumolcs.find('a')+1)     #helye nem az indexe a +1 miatt
+
+
+# házi while-al kell megcsinálni ugyan ezt!!!               !!!HÁZI!!!
+
+#split ==> darabolás!!
+
+mondat= "Én már kezdem érteni ezeket a műveleteket"
+print(mondat.split())
+print(type(mondat.split()))   #==> ez egy lista
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
