@@ -1,78 +1,78 @@
 #
-# # print("8. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
-# #       "a pozitív hárommal osztható számokat, amelyek kisebbek az adott számnál!")
-# kerdes =int(input("Kérek egy pozitív egész számot : "))
-#
-# for kerdes in range(1, kerdes):
-#       if kerdes % 3 == 0:
-#             print(kerdes, end=' ')
-#                                                 #Kész
-# print()
-#
-# # while egy > 100:
-# #       if egy % 3 ==0:
-# #             print(egy)
-# #       egy +=1
-#
-#
-#
-# # print(egy<szam and egy%3)
-#
-#
-# print("9. Írj egy Python programot, amely bekér két pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
-#       "a páros számokat, amelyek a két adott érték közötti zárt intervallumban találhatóak!")
-#
-# print()
-# # x=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-# valasz1=int(input("Kérek egy pozitív egész számot: "))
-# valasz2=int(input("Kérek még egy pozitív egész számot: "))               #kész
-#
-# for i in range(valasz1, valasz2):
-#       print(i, end=' ')
-#
-#
+# print("8. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
+#       "a pozitív hárommal osztható számokat, amelyek kisebbek az adott számnál!")
+kerdes =int(input("Kérek egy pozitív egész számot : "))
 
-#
-#
-# print("10. Írj egy Python programot, amely bekér egy 20-nál nem nagyobb pozitív egész számot a felhasználótól és kiírja "
-#       "a képernyőre a START szót úgy, hogy előtte annyi szóköz legyen amennyi a megadott szám értéke!")
-#
-# valasz3 = int(input("Kérek egy 20-nál nem nagyobb pozitív egész számot: "))
-# kerek = valasz3 * " "                                                       #KÉSZ
-# print(f"{kerek} START")
-#
-#
-#
-# #print("11. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azt a számot, "
-#      # "amely az ennél a számnál nem nagyobb pozitív egész számok összege!")
-#
-# # lista11=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-#
-# valasz11=int(input("Kérek egy pozitív egész számot: "))
-# for i in range(0, valasz11):                          #kész
-#       print(i, end=' ')
-#
-# print()
-#
-#
-#
-#
-# print("12. Írj egy Python programot, amely bekér egy szót (sztringet) a felhasználótól és kiírja a képernyőre "
-#       "a szó betűit, úgy, hogy minden betű egy új sorba kerüljön!")
-#
-# valasz12=input("Kérek egy szót: ")
-# for i in valasz12:
-#       print(i)                                        #kész
-#
-# print("Kész")
-#
-# print("13. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre "
-#       "felváltva a 0 és 1 számjegyeket úgy, hogy a számjegyek együttes darabszáma pontosan a megadott szám legyen!")
-#
-# valasz13=int(input("Kérek egy számot: "))
-# kerek13= valasz13 * (1,2)                                   # kész
-# print(kerek13)
-#
+for kerdes in range(1, kerdes):
+      if kerdes % 3 == 0:
+            print(kerdes, end=' ')
+                                                #Kész
+print()
+
+# while egy > 100:
+#       if egy % 3 ==0:
+#             print(egy)
+#       egy +=1
+
+
+
+# print(egy<szam and egy%3)
+
+
+print("9. Írj egy Python programot, amely bekér két pozitív egész számot a felhasználótól és kiírja a képernyőre azokat "
+      "a páros számokat, amelyek a két adott érték közötti zárt intervallumban találhatóak!")
+
+print()
+# x=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+valasz1=int(input("Kérek egy pozitív egész számot: "))
+valasz2=int(input("Kérek még egy pozitív egész számot: "))               #kész
+
+for i in range(valasz1, valasz2):
+      print(i, end=' ')
+
+
+
+
+
+print("10. Írj egy Python programot, amely bekér egy 20-nál nem nagyobb pozitív egész számot a felhasználótól és kiírja "
+      "a képernyőre a START szót úgy, hogy előtte annyi szóköz legyen amennyi a megadott szám értéke!")
+
+valasz3 = int(input("Kérek egy 20-nál nem nagyobb pozitív egész számot: "))
+kerek = valasz3 * " "                                                       #KÉSZ
+print(f"{kerek} START")
+
+
+
+#print("11. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre azt a számot, "
+     # "amely az ennél a számnál nem nagyobb pozitív egész számok összege!")
+
+# lista11=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+valasz11=int(input("Kérek egy pozitív egész számot: "))
+for i in range(0, valasz11):                          #kész
+      print(i, end=' ')
+
+print()
+
+
+
+
+print("12. Írj egy Python programot, amely bekér egy szót (sztringet) a felhasználótól és kiírja a képernyőre "
+      "a szó betűit, úgy, hogy minden betű egy új sorba kerüljön!")
+
+valasz12=input("Kérek egy szót: ")
+for i in valasz12:
+      print(i)                                        #kész
+
+print("Kész")
+
+print("13. Írj egy Python programot, amely bekér egy pozitív egész számot a felhasználótól és kiírja a képernyőre "
+      "felváltva a 0 és 1 számjegyeket úgy, hogy a számjegyek együttes darabszáma pontosan a megadott szám legyen!")
+
+valasz13=int(input("Kérek egy számot: "))
+kerek13= valasz13 * (1,2)                                   # kész
+print(kerek13)
+
 # print("14. Írj egy Python programot, amely először bekér egy kisebb majd egy nagyobb pozitív valós számot a felhasználótól")
 #       # " és kiírja a képernyőre azokat az egész számokat, amelyek a megadott értékek között helyezkednek el!")
 # valasz14a=int(input("Kérek egy kisebb számot: "))
@@ -197,7 +197,7 @@ print(sztring.count("s"))                   # "E" betűk keresése
 # Értékek és típusok  --->  str, int, float
 # Változók  --->   változó lényegében egy név, amely egy értékre utal.
 # utasítások  --->   while for if
-# for  --->   ismétlés automatikusan végig megy
+# for  --->   ismétlés automatikusan végig megy      ---->       BEJÁRÁS
 # while  --->   ha nem tudjuk a pontos értéket akkor ezt kell használni nem a for-t,
 #            PL: egy alap értékhez adjuk hozzá mindig ameddig nem éri el a beírt összeget
 # if  --->  láncolt, ha fügvény, else ág

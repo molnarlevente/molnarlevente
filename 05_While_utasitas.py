@@ -77,7 +77,7 @@ while True:
     osszeg += int(bemenet)
 print(f"itt az eredmény: {osszeg}!")
 
-print("kövi:")
+print("köv:")
 print()
 #
 # osszeg1=10

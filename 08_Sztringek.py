@@ -47,29 +47,31 @@
 # while i < len(sztring):
 #     print((i), sztring[i])
 #     i+=1
-
-# sztring szeletelés
-
-gyumolcs= "szederfa"
 #
-# print(gyumolcs[0:3])        # az elejétől a harmadik indexen szerepelő betűig íratjuk ki
-# print(gyumolcs[0:400])      # ez végig kiírja
+# # sztring szeletelés
 #
-# # in not in operátorok                      OPERÁTOROK HASZNÁLATA
+# gyumolcs= "szederfa"
+# #
+# # print(gyumolcs[0:3])        # az elejétől a harmadik indexen szerepelő betűig íratjuk ki
+# # print(gyumolcs[0:400])      # ez végig kiírja
+# #
+# # # in not in operátorok                      OPERÁTOROK HASZNÁLATA
+# #
+# # print('a' in gyumolcs)      # az 'A' megtalálható a gyümölcs változóban?
+# #
+# # if "a" in gyumolcs:
+# #     print(" igen szerepel benne az 'A'")
+# #
+# #
+# # print('a' not in gyumolcs)      # az 'A' NEM megtalálható a gyümölcs változóban?
+# #
+# # if "a" not in gyumolcs:
+# #     print(" NEM szerepel benne az 'A'")  # csak akkor lép bele a printbe ha igaz a feltétel
+# # else:
+# #     print(" IGEN szerepel benne az 'A'")
 #
-# print('a' in gyumolcs)      # az 'A' megtalálható a gyümölcs változóban?
 #
-# if "a" in gyumolcs:
-#     print(" igen szerepel benne az 'A'")
-#
-#
-# print('a' not in gyumolcs)      # az 'A' NEM megtalálható a gyümölcs változóban?
-#
-# if "a" not in gyumolcs:
-#     print(" NEM szerepel benne az 'A'")  # csak akkor lép bele a printbe ha igaz a feltétel
-# else:
-#     print(" IGEN szerepel benne az 'A'")
-
+gyumolcs="szederfa"
 
 betu= input("Kérek egy betűt: ")
 index=0
@@ -79,22 +81,22 @@ if betu not in gyumolcs:                    # megvizsgálom van-e benne
 else:
     print("Igen van benne ilyen karakter!")
     index = 0
-    for i in gyumolcs:                         # ha van benne akkor megnezem hanyadik
-        if betu==i:
+    while index < len(gyumolcs):                         # ha van benne akkor megnezem hanyadik
+        if gyumolcs[index] == betu:
             print(f"ez a/az {betu} a {index+1} helyen szerepel!")
             #break      # ha csak az első találatot akarjuk kiírni
         index+=1
 
-#       while
 
 
-
+print()
 # while True:
-#     betu2 = input("Kérek egy betut: ")
-#     if betu2 == '':
-#         break
-#     index += int(index)
-# print(f"itt az eredmény: {betu2}!")
+#     betu2 = input("Kérek egy betűt: ")
+#     if gyumocls==betu2:
+#         print(f"ez a/az {betu} a {index+1} helyen szerepel!")
+#         index+=1
+#     while False:
+#         print(f"nem igaz")
 
 
 
@@ -103,8 +105,7 @@ else:
 
 
 
-
-##### beépített metódus haszn.
+##### beépített metódus haszn.                      FIND
 print(gyumolcs.find('k'))       #ha nemez akarunk akkir if -1bol nem!!! MERT-1-el tér vissza!!!! !      !      !      !      !
 print(gyumolcs.find('a')+1)     #helye nem az indexe a +1 miatt
 
@@ -117,13 +118,13 @@ mondat= "Én már kezdem érteni ezeket a műveleteket"
 print(mondat.split())
 print(type(mondat.split()))   #==> ez egy lista
 
-
-
-
-
-
-
-
+#
+#
+#
+#
+#
+#
+#
 
 
 

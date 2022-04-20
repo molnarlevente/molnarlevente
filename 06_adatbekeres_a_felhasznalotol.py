@@ -48,6 +48,7 @@ while True:
         print(f"Köszönöm a: {valasz_szam2} !!")
         break
 
+
 #str-re
 
 valasz_nev2 = input("Kérlek ird be a neved: ")                                #.isdigit() ==> bool típust kapok True/False, amit while-al már tudok vizsgálni!
