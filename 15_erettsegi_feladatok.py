@@ -132,7 +132,7 @@ print(f"A hónap végén {db-db2} autót nem hoztak vissza.")
 print("5. feladat")
 rendszamoklista=[]
 for elem in autok_lista:
-    if sor[2]  not in rendszamoklista:
+    if sor[2] not in rendszamoklista:
         sor[2] += rendszamoklista
 
 rendszamoklista = sorted(rendszamoklista)                           ### sorted
@@ -150,9 +150,22 @@ for adat_rendszam in rendszamoklista:
 
     print(f"{adat_rendszam} {megtettkm} km")
 
+print("6. feladat")
 
+leghoszabb_ut = 0
 
+for adat_rendszam in rendszamoklista:
+    for elem in autok_lista:
+        if adat_rendszam == elem[2]:
+            if elem[5] == 0:
+                kezdo_km_allas = elem[4]
+            if elem[5] == 1:
+                ut_hossza = elem[4] - kezdo_km_allas
+                if leghoszabb_ut < ut_hossza:
+                    leghoszabb_ut = ut_hossza
+                    dolgozo_azonosito = elem[3]
 
+print(f"Leghosszabb út: {leghoszabb_ut} km, személy: {dolgozo_azonosito}")
 
 
 

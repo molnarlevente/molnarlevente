@@ -50,10 +50,10 @@ else:
 # szorzas=szamok*2
 # print(szorzas)
 #
-# # szeletelés  [ x : y ]
-# print(szamok[1:4])
-# print(szamok[:4])
-# print(szamok[4:])
+# szeletelés  [ x : y ]
+print(szamok[1:4])
+print(szamok[:4])
+print(szamok[4:])
 #
 # # elemek módosítása
 # print(*szoveg)
@@ -137,25 +137,25 @@ print(mlista)
 mlista.append(85)
 mlista.append(65)
 mlista.append(4)
-mlista.append(418)          # mindeig az utolsó poz.-ra
+mlista.append(418)          # append - mindeig az utolsó poz.-ra
 mlista.append(12)
 print(mlista)
 
-mlista.insert(2, 45)        # beszúrás az adott helyre de nem cseréli ki, erébb rólja, !!!!!!!pozicíóra!!!!!!!
+mlista.insert(2, 45)        # insert - beszúrás az adott helyre de nem cseréli ki, erébb tólja, !!!!!!!pozicíóra!!!!!!!
 print(mlista)
 
 print(50*"-")
 sorbaredezve= sorted(mlista)
-print(sorbaredezve)         # növ.sorrend az eredeti lista nem módosul!!!!!!!!!!
+print(sorbaredezve)         # sorted - növ.sorrend az eredeti lista nem módosul!!!!!!!!!!
 print(mlista)
 print(50*"-")
 
-mlista.reverse()            # elemek megfordítás, de az eredeti lista módosul!!!!!!!!!!
+mlista.reverse()            # reverse - elemek megfordítás, de az eredeti lista módosul!!!!!!!!!!
 print(mlista)
 
     #   rendezzükk a listát növekvő sorrendbe
 
-mlista.sort()               # sorba rendez, de az eredeti lista módosul!!!!!!!!!!
+mlista.sort()               # sort - sorba rendez, de az eredeti lista módosul!!!!!!!!!!
 print(mlista)
 
     #   csökk. sorrend, de az eredeti lista nem módosul!!!!!!!!!!

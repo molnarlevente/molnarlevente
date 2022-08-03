@@ -41,27 +41,27 @@
 #     print(nev)
 # print("-"*80)
 #
-print(50*("-"))
-lista=[]
-with open("TXT_allomanyok/nevek.txt", encoding="UTF-8") as f:
-    fejlec = f.readline()
-    for adat in f:
-        sor = adat.strip().split()
-        vnev = sor[0]
-        knev = sor[1]
-        if len(sor)>2:
-            kknev = sor[2]
-            nevek=[vnev, knev, kknev]
-            lista.append(nevek)
-        else:
-            nevek=[vnev,knev]
-            lista.append(nevek)
-
-for elem in lista:
-    print(elem[1])
-
-print(len(lista))
-print(50*("-"))
+# print(50*("-"))
+# lista=[]
+# with open("TXT_allomanyok/nevek.txt", encoding="UTF-8") as f:
+#     fejlec = f.readline()
+#     for adat in f:
+#         sor = adat.strip().split()
+#         vnev = sor[0]
+#         knev = sor[1]
+#         if len(sor)>2:
+#             kknev = sor[2]
+#             nevek=[vnev, knev, kknev]
+#             lista.append(nevek)
+#         else:
+#             nevek=[vnev,knev]
+#             lista.append(nevek)
+#
+# for elem in lista:
+#     print(elem[1])
+#
+# print(len(lista))
+# print(50*("-"))
 # for elem in lista:
 #     if len(lista)>2:
 #         print(f"{elem[0]} {elem[1]} {elem[2]}")
@@ -112,15 +112,41 @@ print(50*("-"))
 #         nap = int(sor[0])
 #         ido = sor[1]
 #         rendszam = sor[2]
-#         azonosito = sor[3]
+#         azonosito = sor[3
+
+
+#playlist!!!!!!!!
+
+egy=[]
+with open ("TXT_allomanyok/playlist.csv", encoding="UTF-8") as f:
+    for adat in f:
+        adat = adat.strip().split(";")
+        eloado = adat[0]
+        cim = adat[1]
+        mufaj = adat[2]
+        hossz = int(adat[3])
+        egy.append(adat)
+        # print(eloado, cim, mufaj, hossz)
+
+for elem in egy:
+    if elem[2]=="rock":
+        print(f"{elem[0]} {elem[1]} {elem[2]} {elem[3]}")
 
 
 
 
+        # eloado = adat[0]
+        # cim= adat[1]
+        # mufaj= adat[2]
+        # hossz= len(adat[3])
+        #
+        # elso_feladat=[eloado,cim,mufaj,]
+        # elso_feladat.append(egy)
+# print(adat)
 
-
-
-
+#2.
+# print(len(egy))
+#3.
 
 
 

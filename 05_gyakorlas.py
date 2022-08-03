@@ -169,7 +169,7 @@ print("5.feladat")
 
 szoveg="A korban még igásállatok vontatják a hajókat a Dunán felfelé. Így halad előre a Szent Borbála is, dacolva a sötétséggel és a rettenetes viharral. A hajó személyzetét a kormányos, Fabula János; a hajóbiztos, Timár Mihály; a tisztító; a hajóteher (tízezer mérő búza) tulajdonosa, Trikalisz Euthym; valamint lánya, Timéa alkotja a legénységen kívül. Hirtelen szörnyű veszélybe kerülnek: a víz egy elszabadult malmot sodor feléjük..."
 
-print(f"A szövegben {len(szoveg.replace(' ' , ''))} szó szerepel, amelyből {szoveg.lower().count('e')} tartalmat e-betűt.")
+print(f"A szövegben {len(szoveg.replace(' ' , ''))} szó szerepel, amelyből {szoveg.lower().count('e')} tartalmaz e-betűt.")
 
 print()
 print(7)
