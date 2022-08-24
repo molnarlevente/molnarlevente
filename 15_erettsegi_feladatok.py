@@ -168,15 +168,85 @@ with open("erettsegi_feladtaok_allomany/info_feladat/2020_okt/autok.txt", encodi
 # print(f"Leghosszabb út: {leghoszabb_ut} km, személy: {dolgozo_azonosito}")
 
 
-print("7. feladat")                         # hf!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-rendszam=input("Rendszámot: ")
-lista=[]
-with open(f"kiiratasok/{rendszam}_menetlevel.txt", "w", encoding="UTF-8") as f:
-    for elem in lista:
-        f.writelines(f"{str(elem)} ")
+# print("7. feladat")
+# rendszam=input("Rendszámot: ")
+# lista=[]
+# with open(f"kiiratasok/{rendszam}_menetlevel.txt", "w", encoding="UTF-8") as f:
+#     for elem in lista:
+#         f.writelines(f"{str(elem)} ")
+#
+# print(rendszam)
+# print("Menetlevél kész.")
+#
 
-print(rendszam)
-print("Menetlevél kész.")
+# megbeszeles=[]
+#
+# with open("erettsegi_feladtaok_allomany/info_feladat/2018_maj/fogado.txt") as f:
+#     for sor in f:
+#         adatok = sor.strip().split()
+#         tanar = adatok[0] + " " + adatok[1]
+#         idopont = adatok[2]
+#         foglalas_datuma = adatok[3]
+#         foglalas_idopontja = adatok[4]
+#
+#         adat=(tanar,idopont,foglalas_datuma,foglalas_idopontja)
+#
+#         megbeszeles.append(adat)
+# print(megbeszeles)
+#
+# print("2. Feladat")
+# print(f"Foglalkozások száma: {len(megbeszeles)}")
+#
+# print("3. Feladat")
+#
+# nev = input("Adjon meg egy nevet: ")
+# db=0
+# for megbeszelesek in megbeszeles:
+#     if megbeszelesek[1] == nev:
+#         db += 1
+# if db == 0:
+#     print(" A megadott néven nincs időpontfohlalás.")
+# else:
+#     print(f"{nev} néven {db} időpontfoglalás van.")
+#
+# print("4. feladat")
+# idopontt = input("Adjon meg egy érvényes időpontot (pl. 17:10): ")
+# tanarok=[]
+# for megbeszelesek in megbeszeles:
+#     if megbeszelesek[2] == idopontt:
+#         tanarok.append(megbeszeles[2])
+# tanarok.sort()
+#
+# fajl_nev = idopontt[:2] + idopontt[3:] + '.txt'
+#
+# with open (fajl_nev, "w", encoding="UTF-8") as k:
+#     for tanar in tanarok:
+#         print(tanar)
+#         print(tanar, file=k)
+#
+# print("5. feladat")
+#
+# min_idopont = megbeszeles[0]["f_datum"] + "-" + megbeszeles[0]["f_datum"]
+# min_index = 0
+# for index, megbeszelesek in enumerate(megbeszeles):
+#     if megbeszelesek[0]["f_datum"] + "-" + megbeszelesek[0]["f_datum"] < min_idopont:
+#         min_idopont = megbeszelesek ["f_datum"] + "-" + megbeszelesek[0]["f_datum"]
+#         min_index = index
+# print(f"tanar neve: {megbeszeles[min_index][tanar]}")
+# print(f"Folalt időpont: {megbeszeles[min_index][idopontt]}")
+# print(f"Foglalás ideje: {min_idopont}")
+#
+# print("6. feladat")
+# idoo=[]
+# for o in range(6,8):
+#     for p in range(0,6):
+#         ip = '1' + str(o) + ':' + str(p) + '0'
+#         ido[ip]=False
+# for megbeszelesek in megbeszeles:
+#     if megbeszelesek[0:1] == "Barna Eszter":
+#         ido[megbeszelesek[2]] = True
+#
+# print(ido)
 
 
 
