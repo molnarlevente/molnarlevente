@@ -63,29 +63,6 @@
 #
 
 #while True !!!!!!!!!
-
-print("ceges autok" and "*"*100)
-
-                                                                    #_______________________________________________________________________
-autok_lista = []
-with open("erettsegi_feladtaok_allomany/info_feladat/2020_okt/autok.txt", encoding="UTF-8") as f:
-    for adat in f:
-        sor = adat.strip().split()
-
-        nap=int(sor[0])
-        ido=sor[1]
-        rendszam=sor[2]
-        azonosito=int(sor[3])
-        km=int(sor[4])
-        # if sor[5] == 0:
-        #     ki = "ki"
-        # else:
-        #     be = "be"
-        ki_be_hajtas=int(sor[5])
-#
-        adatok=[nap,ido,rendszam,azonosito,km,ki_be_hajtas]
-        autok_lista.append(adatok)
-
 # for elem in autok_lista:
 #     print(rendszam)
 #
@@ -246,14 +223,191 @@ with open("erettsegi_feladtaok_allomany/info_feladat/2020_okt/autok.txt", encodi
 #     if megbeszelesek[0:1] == "Barna Eszter":
 #         ido[megbeszelesek[2]] = True
 #
-# print(ido)
+#for ta
+
+# kiszűröm a foglalt időpontokat!
+
+#
+# from datetime import datetime, timedelta
+#
+# fogadooralista = []
+#
+# with open("TXT_allomanyok/fogado.txt", encoding="utf8") as f:
+#     for adat in f:
+#         sor = adat.strip().split(" ")
+#         tanar = sor[0]+" "+sor[1]
+#         foglaltido = sor[2]
+#         foglalasdatuma = sor[3]
+#         fogadooralista.append([tanar,foglaltido,foglalasdatuma])
+#
+# # for tanar,foglaltido,foglalasdatuma in fogadooralista:
+# #     print(foglaltido)
+#
+# #2. feladat:
+# print(f"2. feladat\nFoglalások száma: {len(fogadooralista)}")
+#
+# #3. feladat:
+# #valasztanar = input("3. feladat\nAdjon meg egy nevet: ")
+# valasztanar = "Nagy Ferenc"
+# #valasztanar = "Farkas Attila"
+# db = 0
+# for tanar,foglaltido,foglalasdatuma in fogadooralista:
+#     if tanar == valasztanar:
+#         db += 1
+#
+# if db > 0 :
+#     print(f"{valasztanar} néven {db} időpontfoglalás van.")
+# else:
+#     print("A megadott néven nincs időpontfoglalás.")
+#
+# #4. feldat:
+# #valaszido = input("4. feladat\nAdjon meg egy érvényes időpontot (pl. 17:10): ")
+# valaszido ="17:40"
+# tanaroklista = []
+# for tanar,foglaltido,foglalasdatuma in fogadooralista:
+#     if foglaltido == valaszido:
+#         tanaroklista.append(tanar)
+#
+# tanaroklista = sorted(tanaroklista)
+# #tanaroklista.sort(reverse=True) #fordított sorrend
+# #tanaroklista.sort()
+# #fajlnev = valaszido[:2]+valaszido[3:]+".txt"
+#
+# for elem in tanaroklista:
+#     print(elem)
+# with open(f"Kiiratasok/{valaszido.replace(':','')}.txt", "w" , encoding="utf8") as f:
+#     for elem in tanaroklista:
+#         f.write(f"{elem}\n")
+#
+# #5. feladat:
+# legkisebbdatum = datetime.max
+# #print(legkisebbdatum)
+# for tanar,foglaltido,foglalasdatuma in fogadooralista:
+#     idopont = datetime.strptime(foglalasdatuma, "%Y.%m.%d-%H:%M")
+#     #print(idopont)
+#     if idopont < legkisebbdatum:
+#         legkisebbdatum = idopont
+#         adaotttanar = tanar
+#         adottidopont = foglaltido
+#
+#
+# #print(legkisebbdatum)
+# print(f"\n5. feladat:\nTanár neve: {adaotttanar}\nFoglalt időpont: {adottidopont}\nFoglalás ideje: {legkisebbdatum:%Y.%m.%d-%H:%M}")
+#
+#
+# print("-"*50)
+# #6.feladat:
+# #kiválogatom a foglalt időpontokat
+# foglaltidopontoklista = []
+# for tanar,foglaltido,foglalasdatuma in fogadooralista:
+#     if tanar == "Barna Eszter":
+#         foglaltidopontoklista.append(foglaltido)
+#
+# foglaltidopontoklista = sorted(foglaltidopontoklista)
+# #print(idopontoklista[-1])
+# hazamehet = datetime.strptime(foglaltidopontoklista[-1], "%H:%M")
+# #print(hazamehet)
+# print(f"Barna Eszter legkorábban távozhat: {hazamehet + timedelta(minutes=10):%H:%M}")
+#
+# idopontoklista = []
+# for tanar,foglaltido,foglalasdatuma in fogadooralista:
+#     if foglaltido not in idopontoklista:
+#         idopontoklista.append(foglaltido)
+#
+# #print(sorted(idopontoklista))
+# idopontoklista = sorted(idopontoklista)
+#
+# for idok in foglaltidopontoklista:
+#     for elem in idopontoklista:
+#         if idok == elem:
+#             idopontoklista.remove(elem)
+#
+# for elem in idopontoklista:
+#     print(elem)
+
+
+print()
+
+###      egY ÚJ LISTÁHOZ HOZZÁ ADNI ÉS KIGYUJT AZ ELEMEKET   F.1   !!!!! nem fejeztem be
+
+    # DB += ELEM!!! HOZZÁ ADNI EGY UJ LISTÁHOZ AZTÁN UGY KIIRATNI!  F.2     !!!!! nem ment
+        #NEM REMOVE-VAL
+                                # 45-60P!!!!!!!!  REGGEL!
+    # 2019 MÁJUS IDEGENNYELV!!! UJ PROJECT MINDEN!!! FULL ERETTSEGI SZINTEN! F.3
+
+#       DATETIME
 
 
 
+#       HALMAZ MŰVELETEK?????
+#           - A készletek rendezetlenek.
+#           - A készletelemek egyediek. Az elemek ismétlődése nem megengedett.
+#           - Maga a halmaz módosítható, de a halmazban lévő elemeknek változtathatatlan típusúaknak kell lenniük.
+#           - Egy készlet kétféleképpen hozható létre. Először is definiálhatunk egy halmazt a beépített set() függvénnyel
+#           - Ebben az esetben az <iter> argumentum egy iterálható – jelenleg is gondoljon lista vagy tuple –,
+#               amely létrehozza a halmazba foglalandó objektumok listáját.
+
+#
+#           STR -> INT  CSAK HA VAN IDŐ!!!!!!
+
+# lista1 = [1,2,3,4,5]
+# lista2 = [4,5,6,7,8,9]
+# #lista = set(lista1) & set(lista2)
+# print(lista1)
+# print(lista2)
+# print(set(lista1) | set(lista2))
+# print(set(lista1) ^ set(lista2))
+# print(set(lista1) & set(lista2))
+# print(set(lista1) - set(lista2))
+# print(sorted(set(lista2) - set(lista1)))
+
+megoldas=[]
+with open("erettsegi_feladtaok_allomany/info_feladat/2019_maj/beosztas.txt", encoding="UTF-8") as f:
+    for adat in f:                              ### while!!!!!!!!!!!!
+        sor = adat.strip().split()
+        if len(sor) == 4:
+            tanar= sor[0]
+            tantargy= sor[1]
+            osztaly= sor[2]
+            oraszam= int(sor[3])
+
+
+            #adatok=[tanar,tantargy,osztaly,oraszam]
+            megoldas.append([tanar,tantargy,osztaly,oraszam])
+print(megoldas)
+# for tanar,tantargy,osztaly,oraszam in megoldas:
+#     print(tantargy)
+# megoldas=[]
+# with open("erettsegi_feladtaok_allomany/info_feladat/2019_maj/beosztas.txt", encoding="UTF-8") as f:
+#     for adat in f:
+#         sor = adat.strip().split)()
+#
+#         tanar = sor[0]
+#         tantargy = sor[1]
+#         osztaly = sor[2]
+#         oraszam = sor[3]
+#
+#         adatok=[tanar, tantargy, osztaly, oraszam]
+#         megoldas.append(adatok)
+print(f"2.feladat\nA fájlban {len(megoldas)} bejegyzés van!")
 
 
 
+osz_oraszam = 0
+for sor in megoldas:
+    osz_oraszam += oraszam
+print(f"3.feladat\nAz iskolában a heti összóraszám: {osz_oraszam}")
 
+
+print(f"4.feladat")
+#tanarr = input(f"Egy tanár neve= ")
+tanarr = "Albatrosz Aladin"
+
+szmlalo=0
+for tanar in megoldas:
+    if tanar == tanarr:
+        szmlalo += oraszam
+print(f" A nótanár heti óraszáma: {szmlalo}")
 
 
 
