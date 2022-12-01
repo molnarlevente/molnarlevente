@@ -33,14 +33,17 @@ for elem in sorted(lista):
 with open("kiiratasok/lista.txt", "w", encoding="UTF-8") as f:
     f.writelines(str(lista))
 
-#_______csak az elemek kiiratása egy féjlba
+#_______csak az elemek kiiratása egy fájlba
 
 kiiratas = ""
 for elem in lista:
     kiiratas += f"{str(elem)} "
 
-with open("kiiratasok/kiirataas.txt", "w", encoding="UTF-8") as f:
+with open("kiiratasok/kiirataas_1.txt", "w", encoding="UTF-8") as f:
     f.writelines(kiiratas)
 
+#_______egy lépésben
 
-
+with open("kiiratasok/kiirataas_2.txt", "w", encoding="UTF-8") as f:
+    for elem in lista:
+        f.writelines(f"{str(elem)} ")

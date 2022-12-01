@@ -363,20 +363,23 @@ print()
 
 megoldas=[]
 with open("erettsegi_feladtaok_allomany/info_feladat/2019_maj/beosztas.txt", encoding="UTF-8") as f:
-    for adat in f:                              ### while!!!!!!!!!!!!
-        sor = adat.strip().split()
-        if len(sor) == 4:
-            tanar= sor[0]
-            tantargy= sor[1]
-            osztaly= sor[2]
-            oraszam= int(sor[3])
+    while True:                              ### while!!!!!!!!!!!!
+        tanar = f.readline().strip()
+        if not tanar:
+            break
+        tantargy= f.readline().strip()
+        osztaly= f.readline().strip()
+        oraszam= int(f.readline().strip())
 
 
-            #adatok=[tanar,tantargy,osztaly,oraszam]
-            megoldas.append([tanar,tantargy,osztaly,oraszam])
-print(megoldas)
+        #adatok=[tanar,tantargy,osztaly,oraszam]
+        megoldas.append([tanar,tantargy,osztaly,oraszam])
+
+
+#
 # for tanar,tantargy,osztaly,oraszam in megoldas:
 #     print(tantargy)
+
 # megoldas=[]
 # with open("erettsegi_feladtaok_allomany/info_feladat/2019_maj/beosztas.txt", encoding="UTF-8") as f:
 #     for adat in f:
@@ -389,25 +392,90 @@ print(megoldas)
 #
 #         adatok=[tanar, tantargy, osztaly, oraszam]
 #         megoldas.append(adatok)
-print(f"2.feladat\nA fájlban {len(megoldas)} bejegyzés van!")
+# print(f"2.feladat\nA fájlban {len(megoldas)} bejegyzés van!")
+#
+#
+#
+# osz_oraszam = 0
+# for sor in megoldas:
+#     osz_oraszam += oraszam
+# print(f"\n3.feladat\nAz iskolában a heti összóraszám: {osz_oraszam}")
+#
+#
+# print(f"\n4.feladat")
+# #tanarr = input(f"Egy tanár neve= ")
+# tanarr = "Albatrosz Aladin"
+#
+# szmlalo=0
+# for sor in megoldas:
+#     if tanar == tanarr:
+#         szmlalo += oraszam
+# print(f"A nótanár heti óraszáma: {szmlalo}")
+
+##  5.  6.  7.  feladat
+
+# print(f"\n5.feladat")
+# with open("of.txt", "w", encoding="UTF-80") as f:
+#     for sor in megoldas:
+#         if tantargy == "osztalyfonoki":
+#             print(f"\n{osztaly} - {tanar}")
+#
+# print(f"\n6.feladat")
+#
+# osztaly_bekeres = input("Osztály= ")
+# tantargy_bekeres = input("Tantargy= ")
+# szamlalo=0
+#
+# for sor in megoldas:
+#     if osztaly == osztaly_bekeres and tantargy == tantargy_bekeres:
+#         szamlalo += 1
+#
+# if szamlalo > 1:
+#     print("Csoportbontásban tanulják.")
+# else:
+#     print("Osztályszinten tanulják. ")
 
 
 
-osz_oraszam = 0
-for sor in megoldas:
-    osz_oraszam += oraszam
-print(f"3.feladat\nAz iskolában a heti összóraszám: {osz_oraszam}")
+# print(f"\n7.feladat")
+#
+# tanarok = []
+# for tanar,tantargy,osztaly,oraszam in megoldas:
+#     if tanar not in tanarok:
+#         tanarok.append(tanar)
+# print(f"Az iskolában {len(tanarok)} tanár tanít.")
+#
 
 
-print(f"4.feladat")
-#tanarr = input(f"Egy tanár neve= ")
-tanarr = "Albatrosz Aladin"
 
-szmlalo=0
-for tanar in megoldas:
-    if tanar == tanarr:
-        szmlalo += oraszam
-print(f" A nótanár heti óraszáma: {szmlalo}")
+
+# megoldas=[]
+# with open ("erettsegi_feladtaok_allomany/info_feladat/2017_okt/naplo-2.txt") as f:
+#     for sor in f:
+#         if sor[0] == "#":
+#             datum_sor = sor.strip().split()
+#             datum = datum_sor[1] + " " + datum_sor[2]
+#             megoldas.append(datum)
+#         else:
+#             bejegyzes = sor.strip().split()
+#             megoldas.append(bejegyzes)
+#
+# print(megoldas)
+
+megoldas=[]
+with open ("erettsegi_feladtaok_allomany/info_feladat/2017_okt/naplo-2.txt") as f:
+    for sor in f:
+        if sor[0] == "#":
+            datum_sor = sor.strip().split()
+            datum = datum_sor[1] + " " + datum_sor[2]
+            megoldas.append(datum)
+        else:
+            bejegyzes = sor.strip().split()
+            megoldas.append(bejegyzes)
+
+for datum in megoldas:
+    print(megoldas)
+
 
 
 
